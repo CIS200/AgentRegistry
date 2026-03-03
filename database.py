@@ -1,7 +1,7 @@
 import json
 import sqlite3
 
-from .models import AgentCard
+from models import AgentCard
 
 DB_PATH = "agentboard.db"
 
