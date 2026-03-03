@@ -5,8 +5,8 @@ import httpx
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .database import delete_agent, get_all_agents, init_db, insert_agent, update_agent_status
-from .models import AgentCard
+from database import delete_agent, get_all_agents, init_db, insert_agent, update_agent_status
+from models import AgentCard
 
 app = FastAPI(title="AgentBoard Registry")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
